@@ -9,7 +9,10 @@ export default function NavBar() {
 			<a href="#">
 				<span>02.</span> whoami
 			</a>
-			<a href="#">
+			<a
+				href="#"
+				className="pr-10"
+			>
 				<span>03.</span> GitHub
 			</a>
 			<a href="#">Contact</a>
