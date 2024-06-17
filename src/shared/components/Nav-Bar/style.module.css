@@ -1,0 +1,25 @@
+.navBar_container {
+	border: 1px dashed red;
+
+	position: fixed;
+	top: 3rem;
+	right: 4rem;
+
+	display: flex;
+	gap: 20px;
+}
+
+.navBar_container a {
+	font-size: 1.3rem;
+}
+.navBar_container span {
+	color: var(--gold-color);
+	font-weight: 500;
+}
+
+/* 
+
+.navBar_container {}
+.navBar_container {}
+
+*/

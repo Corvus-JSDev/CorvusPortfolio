@@ -1,7 +1,18 @@
+import style from "./style.module.css";
+
 export default function NavBar() {
 	return (
-		<div>
-			<h1>hi</h1>
-		</div>
+		<nav className={style.navBar_container}>
+			<a href="#">
+				<span>01.</span> Projects
+			</a>
+			<a href="#">
+				<span>02.</span> whoami
+			</a>
+			<a href="#">
+				<span>03.</span> GitHub
+			</a>
+			<a href="#">Contact</a>
+		</nav>
 	);
 }
