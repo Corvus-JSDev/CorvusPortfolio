@@ -1,11 +1,11 @@
 .navBar_container {
-	border: 1px dashed red;
-
 	position: fixed;
 	top: 3rem;
 	right: 4rem;
 
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	gap: 20px;
 }
 
@@ -17,9 +17,17 @@
 	font-weight: 500;
 }
 
-/* 
+.contact_navbar {
+	position: relative;
+	overflow: hidden;
 
-.navBar_container {}
-.navBar_container {}
+	margin-left: 10px;
+	border: 2px solid var(--gold-color);
+	border-radius: 8px;
+	padding: 5px 15px;
+	color: var(--gold-color);
+	font-weight: 500;
+	letter-spacing: 1px;
 
-*/
+	transition: all 0.2s ease-in-out;
+}
