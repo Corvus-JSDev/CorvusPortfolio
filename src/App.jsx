@@ -1,5 +1,12 @@
 import "./App.css";
+import NavBar from "@sharedComps/Nav-Bar/Nav-Bar.jsx";
 
-function App() {}
+function App() {
+	return (
+		<>
+			<NavBar />
+		</>
+	);
+}
 
 export default App;

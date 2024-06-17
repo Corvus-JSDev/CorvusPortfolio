@@ -1,5 +1,5 @@
 :root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
 	line-height: 1.5;
 	font-weight: 400;
 
@@ -14,10 +14,14 @@
 	--secondary-background: #251035;
 	--gold-color: #d09e08;
 }
+* {
+	margin: 0;
+	padding: 0;
+}
 
 body {
 	min-width: 320px;
-	min-height: 100vh;
+	min-height: 100lvh;
 	background-color: var(--background-purple);
 }
 
