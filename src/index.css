@@ -1,0 +1,26 @@
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color: #d0d0d4;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	--background-purple: #15132a;
+	--secondary-background: #251035;
+	--gold-color: #d09e08;
+}
+
+body {
+	min-width: 320px;
+	min-height: 100vh;
+	background-color: var(--background-purple);
+}
+
+h1 {
+	font-size: 1.5em;
+}
