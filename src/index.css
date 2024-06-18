@@ -25,13 +25,41 @@
 }
 
 body {
+	padding: 100px;
 	min-width: 320px;
 	min-height: 100lvh;
 	background-color: var(--background-purple);
 }
 
 h1 {
-	font-size: 1.5em;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+h2 {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 1.17rem;
+	font-weight: 500;
+}
+
+h4 {
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+/* Additional Text Settings */
+strong,
+b {
+	font-weight: bold;
+}
+
+em,
+i {
+	font-style: italic;
 }
 
 a {
@@ -39,6 +67,7 @@ a {
 	color: #d0d0d4;
 }
 
+/* Animations */
 @keyframes shineAnimation {
 	0% {
 		left: -100%;
@@ -47,3 +76,5 @@ a {
 		left: 100%;
 	}
 }
+
+/* Media */

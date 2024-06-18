@@ -28,6 +28,4 @@
 	color: var(--gold-color);
 	font-weight: 500;
 	letter-spacing: 1px;
-
-	transition: all 0.2s ease-in-out;
 }
