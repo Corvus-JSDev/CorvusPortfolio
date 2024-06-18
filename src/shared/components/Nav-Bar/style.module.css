@@ -9,12 +9,31 @@
 	gap: 20px;
 }
 
-.navBar_container a {
-	font-size: 1.3rem;
-}
 .navBar_container span {
 	color: var(--gold-color);
 	font-weight: 500;
+}
+.navBar_container a {
+	font-size: 1.3rem;
+	overflow: hidden;
+	position: relative;
+}
+/* Nav bar underline animation */
+.navBar_container a::after {
+	content: "";
+	transform: translate3d(-100%, 0, 0);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 80%;
+	height: 3px;
+	background-color: var(--gold-color);
+	opacity: 1;
+	transition: opacity 300ms, transform 300ms;
+}
+.navBar_container a:hover::after,
+.navBar_container a:focus::after {
+	transform: translate3d(0, 0, 0);
 }
 
 .contact_navbar {
@@ -28,4 +47,9 @@
 	color: var(--gold-color);
 	font-weight: 500;
 	letter-spacing: 1px;
+}
+.contact_navbar::after {
+	/* This disables the underline from being shown */
+	/* It also works because the shine effect uses the ::before class */
+	display: none;
 }
