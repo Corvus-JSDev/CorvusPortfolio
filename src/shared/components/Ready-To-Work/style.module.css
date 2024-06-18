@@ -1,0 +1,33 @@
+.rtw_container {
+	background: rgb(82, 39, 204);
+	background: linear-gradient(
+		160deg,
+		rgba(82, 39, 204, 0.7) 0%,
+		rgba(150, 41, 168, 0.7) 100%
+	);
+
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+
+	width: 100vw;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+
+	overflow: hidden;
+	padding: 10px 0px;
+}
+.rtw_container * {
+	font-size: 1.4rem;
+	text-wrap: nowrap;
+	letter-spacing: 1px;
+}
+.rtw_container h1 {
+	font-weight: 600;
+}
+.rtw_container h3 {
+	font-weight: 400;
+}

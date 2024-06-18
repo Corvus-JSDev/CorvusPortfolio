@@ -1,0 +1,159 @@
+.projectContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 70px;
+	margin-top: 35px;
+}
+
+/** header and its underline */
+.header_ProjectSection {
+	position: relative;
+	font-size: 3rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	z-index: 2;
+}
+.header_ProjectSection::before {
+	content: "";
+	position: absolute;
+	left: 70px;
+	top: 45px;
+	width: 150px;
+	height: 13px;
+	transform: skew(-30deg) translateX(-50%);
+	background: #832db4;
+	opacity: 1;
+	z-index: -1;
+}
+
+/** Project Containers */
+/* .projectContainer img {
+	width: 600px;
+	height: 300px;
+	object-fit: cover;
+} */
+
+.mainProject,
+.secondaryProject,
+.thirdProject {
+	overflow: hidden;
+}
+
+.mainProject {
+	margin-top: 60px;
+}
+.secondaryProjects {
+	border: 2px solid green;
+
+	margin-top: 50px;
+}
+.thirdProjects {
+	border: 2px solid blue;
+
+	margin-top: 50px;
+}
+
+/** Project Component  */
+
+.overallContainer {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.mainThumbnail {
+	width: 600px;
+	max-height: 300px;
+	overflow: hidden;
+}
+
+.thumbnailOverlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+
+	background-color: rgba(0, 0, 0, 0.2);
+	backdrop-filter: blur(5px);
+	width: 100%;
+	height: 100%;
+
+	opacity: 0;
+
+	transition: all 0.6s ease;
+}
+.thumbnailOverlay:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+.thumbnailOverlay::after {
+	/* Vignette effect */
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(
+		ellipse at center,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 0.4) 80%,
+		rgba(0, 0, 0, 0.8) 110%
+	);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.infoSection {
+	position: absolute;
+	bottom: 20px;
+	left: 15px;
+
+	background: rgb(0, 0, 0);
+	background: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0.4) 65%,
+		rgba(150, 41, 168, 0) 100%
+	);
+	padding: 3px 10px 8px 8px;
+	border-radius: 8px;
+}
+.infoSection h1 {
+	font-size: 1.5rem;
+	position: relative;
+	bottom: 5px;
+	margin-bottom: 3px;
+	letter-spacing: 1px;
+}
+.infoSection code {
+	font-size: 0.8rem;
+	opacity: 0.7;
+}
+.infoSection p {
+	max-width: 500px;
+	font-size: 0.8rem;
+	opacity: 0.85;
+}
+
+.techUsed {
+	position: relative;
+	top: 20px;
+	left: 15px;
+
+	display: flex;
+	gap: 10px;
+}
+.techUsed img {
+	height: 35px;
+	opacity: 0.6;
+}
+
+.externalLink {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	width: 40px;
+	filter: invert(1);
+	opacity: 0.7;
+}

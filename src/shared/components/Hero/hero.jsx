@@ -13,12 +13,12 @@ function startWorkBtnShine() {
 	position: absolute;
 	top: 0;
 	left: -100%;
-	width: 100%;
+	width: 60%;
 	height: 100%;
 	background: linear-gradient(
 		45deg,
 		transparent,
-		var(--gold-color),
+		var(--purple-text),
 		transparent
 	);
 	opacity: 0.4;

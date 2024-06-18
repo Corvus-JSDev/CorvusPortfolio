@@ -10,6 +10,7 @@
 	/* border: 1px solid red; */
 	scale: 0.9;
 	margin-top: 10px;
+	margin-bottom: 50px;
 }
 
 /** INFO Section */
@@ -27,10 +28,13 @@
 	justify-content: center;
 	/* padding: 0px 250px; */
 }
+
+/* im using this because padding messes with the flex width */
+/*
 .info_margin {
-	/* im using this because padding messes with the flex width */
 	margin-left: 120px;
 }
+*/
 
 .header_infoSection {
 	margin-bottom: 40px;
@@ -98,7 +102,8 @@
 	overflow: hidden;
 
 	margin-top: 35px;
-	border: 4px solid var(--gold-color);
+	border: 3px solid var(--purple-text);
+	background-color: var(--background-purple);
 	border-radius: 10px;
 	color: var(--purple-text);
 	font-size: 1.5rem;

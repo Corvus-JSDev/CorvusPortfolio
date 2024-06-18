@@ -23,11 +23,11 @@
 	margin: 0;
 	padding: 0;
 }
-
 body {
-	padding: 100px;
+	position: relative;
 	min-width: 320px;
 	min-height: 100lvh;
+	overflow-x: hidden;
 	background-color: var(--background-purple);
 }
 
@@ -35,43 +35,36 @@ h1 {
 	font-size: 2rem;
 	font-weight: 700;
 }
-
 h2 {
 	font-size: 1.5rem;
 	font-weight: 600;
 }
-
 h3 {
 	font-size: 1.17rem;
 	font-weight: 500;
 }
-
 h4 {
 	font-size: 1rem;
 	font-weight: 500;
 }
-
 strong,
 b {
 	font-weight: bold;
 }
-
 em,
 i {
 	font-style: italic;
 }
-
 a {
 	text-decoration: none;
 	color: #d0d0d4;
 }
-
 nav {
 	position: relative;
 	z-index: 999999999999;
 }
 
-/* Animations */
+/** Animations */
 @keyframes shineAnimation {
 	0% {
 		left: -100%;
@@ -81,4 +74,43 @@ nav {
 	}
 }
 
-/* Media */
+/** Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	body {
+		/* background-color: blue; */
+		padding: 100px 30px;
+	}
+}
+/* Small devices */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	body {
+		/* background-color: green; */
+		padding: 100px 50px;
+	}
+}
+
+/* Medium devices */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+	body {
+		/* background-color: red; */
+		padding: 100px 80px;
+	}
+}
+
+/* Large devices */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+	body {
+		/* background-color: blue; */
+		padding: 100px 100px;
+	}
+}
+
+/* Extra large devices */
+@media only screen and (min-width: 1201px) {
+	body {
+		/* background-color: var(--background-purple); */
+		padding: 100px 130px;
+	}
+}
