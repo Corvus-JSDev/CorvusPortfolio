@@ -9,7 +9,7 @@ export default function TypeWriter() {
 			delay: 90,
 			cursor: "|",
 		});
-		TypewriterEff.pauseFor(4000)
+		TypewriterEff.pauseFor(3000)
 			.typeString("I build things, the cool")
 			.pauseFor(400)
 			.deleteChars(4)

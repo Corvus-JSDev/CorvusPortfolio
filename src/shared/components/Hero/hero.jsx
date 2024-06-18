@@ -45,7 +45,7 @@ export default function HeroSection() {
 
 		setTimeout(() => {
 			startWorkBtnShine();
-		}, 11000);
+		}, 9500);
 	});
 
 	return (
@@ -64,7 +64,7 @@ export default function HeroSection() {
 
 					<div className={style.desc_infoSection}>
 						<TypeWriter />
-						<p>
+						<p style={{ maxWidth: "400px" }}>
 							I am a software engineer specializing in
 							front-end web development, focused on creating an
 							marvelous human-centric experience.
@@ -83,7 +83,31 @@ export default function HeroSection() {
 
 			{/* Right LOGO */}
 			<section className={style.logoSection}>
-				<h1>Crow img</h1>
+				<div className={style.crowContainer}>
+					<img src="/imgs/birds/sketch-crow-outline-gutted-white.png" />
+					<svg
+						width="350px"
+						height="350px"
+						className={style.haloContainer}
+					>
+						<circle
+							cx="50%"
+							cy="50%"
+							r="125"
+						></circle>
+					</svg>
+					<div className={style.lineContainer}>
+						<div
+							className={`${style.crow_line} ${style.line1}`}
+						></div>
+						<div
+							className={`${style.crow_line} ${style.line2}`}
+						></div>
+						<div
+							className={`${style.crow_line} ${style.line3}`}
+						></div>
+					</div>
+				</div>
 			</section>
 		</div>
 	);

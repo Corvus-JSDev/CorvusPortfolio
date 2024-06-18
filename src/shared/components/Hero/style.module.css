@@ -1,18 +1,18 @@
 :root {
 	--purple-text: #d16fff;
+	--section-height: 400px;
+	--section-margin: 80px;
 }
 
 .heroContainer {
-	/* border: 2px solid red; */
-
 	display: flex;
 	justify-content: space-between;
 }
 
 /** INFO Section */
 .infoSection {
-	height: 800px;
-	border: 1px solid blue;
+	height: var(--section-height);
+	margin-top: var(--section-margin);
 
 	background-image: url(/imgs/white-space-breaker/messy-dots-edited-2-opacityChange.png);
 	background-position: center;
@@ -27,12 +27,10 @@
 }
 .info_margin {
 	/* im using this because padding messes with the flex width */
-	margin: 0px 100px;
+	margin-left: 120px;
 }
 
 .header_infoSection {
-	/* border: 1px solid red; */
-
 	margin-bottom: 40px;
 	letter-spacing: 2px;
 }
@@ -42,7 +40,7 @@
 	font-size: 1.3rem;
 	font-weight: 400;
 	opacity: 0;
-	animation: hellofriend 900ms ease-in-out 500ms forwards;
+	animation: hellofriend 1000ms ease-in-out 400ms forwards;
 }
 .header_infoSection h1 {
 	position: relative;
@@ -60,7 +58,7 @@
 	background: #832db4;
 	opacity: 0;
 	z-index: -1;
-	animation: headerUnderlineAnimate 900ms ease-in-out 500ms forwards;
+	animation: headerUnderlineAnimate 1000ms ease-in-out 400ms forwards;
 }
 
 @keyframes headerUnderlineAnimate {
@@ -109,11 +107,136 @@
 
 /** LOGO Section  */
 .logoSection {
-	height: 800px;
-	border: 1px solid green;
+	height: var(--section-height);
+	margin-top: var(--section-margin);
 
 	flex: 0.7;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
+.crowContainer {
+	position: relative;
+}
+
+.crowContainer img {
+	transform: scaleX(-1);
+	position: relative;
+	/* for some reason "width" wouldn't keep the same width */
+	max-width: 510px;
+	min-width: 510px;
+	z-index: 5;
+}
+
+.haloContainer {
+	position: absolute;
+	top: -100px;
+	left: -35px;
+
+	transform-origin: center;
+	transform: rotate(25deg);
+}
+.crowContainer circle {
+	/* position: absolute; */
+	/* z-index: 1; */
+
+	/* top: -55px; */
+	/* left: 15px; */
+
+	width: 230px;
+	height: 230px;
+	border-radius: 50%;
+
+	fill: none;
+	stroke-width: 4px;
+	stroke: var(--gold-color);
+	stroke-dasharray: 900;
+	stroke-dashoffset: 860;
+
+	animation: haloExpand 1.5s ease 11s forwards;
+}
+@keyframes haloExpand {
+	0% {
+		stroke-dashoffset: 860;
+	}
+	100% {
+		stroke-dashoffset: 0;
+	}
+}
+
+.lineContainer {
+	position: absolute;
+	top: 185px;
+	left: 260px;
+	transform: rotate(-55deg);
+	z-index: 1;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.crow_line {
+	position: absolute;
+
+	height: 3px;
+	background-color: var(--gold-color);
+	transition: all 0.2s ease-in-out;
+}
+.line1 {
+	top: 60px;
+	width: 0px; /* will become 390px */
+	opacity: 0;
+	animation: lineExpand1 1s ease-in-out 12.8s forwards;
+}
+.line2 {
+	top: 30px;
+	width: 0px; /* will become 450px */
+	opacity: 0;
+	animation: lineExpand2 1s ease-in-out 12.4s forwards;
+}
+.line3 {
+	top: 0px;
+	width: 0px; /* will become 510px */
+	opacity: 0;
+	animation: lineExpand3 1s ease-in-out 12s forwards;
+}
+
+@keyframes lineExpand1 {
+	0% {
+		width: 0px;
+		opacity: 0;
+	}
+	100% {
+		width: 390px;
+		opacity: 1;
+	}
+}
+@keyframes lineExpand2 {
+	0% {
+		width: 0px;
+		opacity: 0;
+	}
+	100% {
+		width: 450px;
+		opacity: 1;
+	}
+}
+@keyframes lineExpand3 {
+	0% {
+		width: 0px;
+		opacity: 0;
+	}
+	100% {
+		width: 510px;
+		opacity: 1;
+	}
+}
+
+/*
+.crowContainer {}
+.crowContainer {}
+.crowContainer {}
+.crowContainer {}
+*/
