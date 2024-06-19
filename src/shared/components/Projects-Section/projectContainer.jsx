@@ -11,11 +11,37 @@ title: obv the title
 
 desc: again obv
 */
+
 export default function ProjectContainer(props) {
+	// shorten description for the preview
+	let shortDesc;
+	if (props.desc.length > 170) {
+		let truncatedDesc = props.desc.substring(0, 170);
+		// Check if the 171st character is part of a word
+		if (
+			props.desc.charAt(170) !== " " &&
+			props.desc.charAt(171) !== " "
+		) {
+			// Find the last space within the first 170 characters
+			let lastSpaceIndex = truncatedDesc.lastIndexOf(" ");
+			if (lastSpaceIndex !== -1) {
+				shortDesc =
+					truncatedDesc.substring(0, lastSpaceIndex) + " ...";
+			}
+		} else {
+			shortDesc = truncatedDesc + " ...";
+		}
+	} else {
+		shortDesc = props.desc;
+	}
+
 	return (
 		<div className={style.overallContainer}>
 			<div className={style.mainThumbnail}>
-				<img src={props.thumbnail} />
+				<img
+					className={style.thumbnail}
+					src={props.thumbnail}
+				/>
 			</div>
 
 			<div className={style.thumbnailOverlay}>
@@ -56,7 +82,7 @@ export default function ProjectContainer(props) {
 					</code>
 					<h1 className={style.title}>{props.title}</h1>
 
-					<p className={style.desc}>{props.desc}</p>
+					<p className={style.desc}>{shortDesc}</p>
 				</div>
 
 				<img

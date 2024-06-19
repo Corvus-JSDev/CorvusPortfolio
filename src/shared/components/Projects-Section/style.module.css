@@ -1,3 +1,8 @@
+.centerDiv {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
 .projectContainer {
 	display: flex;
 	flex-direction: column;
@@ -5,6 +10,7 @@
 	align-items: center;
 	padding: 0px 70px;
 	margin-top: 35px;
+	max-width: 900px;
 }
 
 /** header and its underline */
@@ -29,30 +35,56 @@
 }
 
 /** Project Containers */
-/* .projectContainer img {
-	width: 600px;
-	height: 300px;
-	object-fit: cover;
-} */
 
 .mainProject,
-.secondaryProject,
-.thirdProject {
+.secondaryProjects,
+.thirdProjects {
 	overflow: hidden;
+	width: 100%;
 }
 
 .mainProject {
-	margin-top: 60px;
+	margin-top: 20px;
 }
+
 .secondaryProjects {
-	border: 2px solid green;
+	/* border: 2px solid green; */
 
 	margin-top: 50px;
+
+	display: flex;
+	gap: 15px;
+
+	transition: all 0.5s ease;
 }
+.secondChild1,
+.secondChild2 {
+	flex: 1;
+	transition: all 0.5s ease;
+}
+.secondChild1:hover,
+.secondChild2:hover {
+	flex: 2.5;
+}
+
 .thirdProjects {
-	border: 2px solid blue;
+	/* border: 2px solid blue; */
 
 	margin-top: 50px;
+
+	display: flex;
+	gap: 15px;
+
+	transition: all 0.5s ease;
+}
+.thirdChild1,
+.thirdChild2 {
+	flex: 1;
+	transition: all 0.5s ease;
+}
+.thirdChild1:hover,
+.thirdChild2:hover {
+	flex: 2.5;
 }
 
 /** Project Component  */
@@ -60,13 +92,21 @@
 .overallContainer {
 	position: relative;
 	overflow: hidden;
-	border-radius: 10px;
+	border-radius: 8px;
+	/* width: 100%; */
 }
 
 .mainThumbnail {
-	width: 600px;
-	max-height: 300px;
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* width: 100%; */
+}
+.thumbnail {
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
 }
 
 .thumbnailOverlay {
@@ -79,10 +119,11 @@
 	backdrop-filter: blur(5px);
 	width: 100%;
 	height: 100%;
+	overflow: hidden;
 
 	opacity: 0;
 
-	transition: all 0.6s ease;
+	transition: all 0.3s ease;
 }
 .thumbnailOverlay:hover {
 	opacity: 1;
