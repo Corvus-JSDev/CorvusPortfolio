@@ -1,0 +1,98 @@
+.skillsContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 90px;
+
+	background-color: var(--secondary-background);
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100vw;
+	padding: 20px 250px 40px 250px;
+
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+/** header and its underline */
+.header_SkillsSection {
+	position: relative;
+	font-size: 3rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	z-index: 2;
+}
+.header_SkillsSection::before {
+	content: "";
+	position: absolute;
+	left: 55px;
+	top: 45px;
+	width: 120px;
+	height: 13px;
+	transform: skew(-30deg) translateX(-50%);
+	background: #832db4;
+	opacity: 1;
+	z-index: -1;
+}
+
+/*  */
+
+.techContainer {
+	/* border: 3px solid purple; */
+
+	margin-top: 10px;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+}
+.techContainer h3 {
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
+.techStack,
+.performanceTech {
+	min-width: 300px;
+}
+
+.techStack img,
+.performanceTech img {
+	width: 30px;
+}
+
+.techStack > div,
+.performanceTech > div {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.techStack > div > div,
+.performanceTech > div > div {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 20px;
+	letter-spacing: 1px;
+	font-weight: 500;
+	font-size: 1.2rem;
+}
+
+.techStack p,
+.performanceTech p {
+	transition: all 0.2s;
+}
+.techStack p:hover,
+.performanceTech p:hover {
+	font-weight: 600;
+	position: relative;
+	letter-spacing: 1.5px;
+}
+
+.techHeader {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
