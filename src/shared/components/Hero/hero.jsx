@@ -3,7 +3,7 @@ import style from "./style.module.css";
 import { useEffect } from "react";
 
 function startWorkBtnShine() {
-	const contactAnimationSpeed = 1100;
+	const contactAnimationSpeed = 800;
 
 	// Create the style element and before pseudo-class for the contact button
 	const workBeforeClass = document.createElement("style");
@@ -13,15 +13,16 @@ function startWorkBtnShine() {
 	position: absolute;
 	top: 0;
 	left: -100%;
-	width: 60%;
+	width: 100%;
 	height: 100%;
 	background: linear-gradient(
-		45deg,
+		60deg,
 		transparent,
 		var(--purple-text),
 		transparent
 	);
-	opacity: 0.4;
+
+	opacity: 0.35;
 
 	animation: shineAnimation ${String(contactAnimationSpeed)}ms forwards;
 	animation-play-state: running;

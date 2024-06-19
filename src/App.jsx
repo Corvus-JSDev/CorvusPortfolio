@@ -4,6 +4,7 @@ import HeroSection from "./shared/components/Hero/hero.jsx";
 import ReadyToWork from "./shared/components/Ready-To-Work/ReadyToWork.jsx";
 import ProjectsSection from "./shared/components/Projects-Section/projects.jsx";
 import SkillsSection from "./shared/components/Skills/Skills.jsx";
+import WhoAmI from "./shared/components/whoami/WhoAmI.jsx";
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 			<ReadyToWork />
 			<ProjectsSection />
 			<SkillsSection />
+			<WhoAmI />
 		</>
 	);
 }

@@ -1,0 +1,39 @@
+.whoamiContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 70px;
+}
+
+.header_whoamiSection {
+	position: relative;
+	font-size: 3rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	z-index: 2;
+}
+.header_whoamiSection::before {
+	content: "";
+	position: absolute;
+	left: 80px;
+	top: 45px;
+	width: 170px;
+	height: 13px;
+	transform: skew(-30deg) translateX(-50%);
+	background: #832db4;
+	opacity: 1;
+	z-index: -1;
+}
+
+.textContainer {
+	margin-top: 20px;
+	max-width: 700px;
+}
+.textContainer p {
+	letter-spacing: 1px;
+	line-height: 2;
+	font-size: 1.2rem;
+	text-indent: 30px;
+	margin-bottom: 5px;
+}
