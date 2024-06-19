@@ -1,12 +1,19 @@
 .navBar_container {
+	background-color: rgba(21, 19, 42, 0.4);
+	backdrop-filter: blur(2px);
+	border-radius: 10px;
+
 	position: fixed;
 	top: 3rem;
-	right: 4rem;
+	left: 60vw;
+	width: 100vw;
 
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	align-items: center;
+	transform-origin: left;
 	gap: 20px;
+	padding: 5px 13px;
 }
 
 .navBar_container span {
@@ -21,7 +28,7 @@
 /* Nav bar underline animation */
 .navBar_container a::after {
 	content: "";
-	transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-110%, 0, 0);
 	position: absolute;
 	bottom: 0;
 	left: 0;
