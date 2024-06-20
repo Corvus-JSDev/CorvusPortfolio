@@ -46,7 +46,7 @@ export default function HeroSection() {
 
 		setTimeout(() => {
 			startWorkBtnShine();
-		}, 9500);
+		}, 8000);
 	});
 
 	return (

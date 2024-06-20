@@ -1,6 +1,7 @@
 :root {
 	--purple-text: #d16fff;
 	--section-height: 400px;
+	--line-opacity: 0.9;
 }
 
 .heroContainer {
@@ -20,12 +21,13 @@
 	background-image: url(/imgs/white-space-breaker/messy-dots-edited-2-opacityChange.png);
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 90%;
+	background-size: 100%;
 
 	flex: 1;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	/* padding: 0px 250px; */
 }
 
@@ -37,7 +39,7 @@
 */
 
 .header_infoSection {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	letter-spacing: 2px;
 }
 .header_infoSection h3 {
@@ -46,12 +48,14 @@
 	font-size: 1.3rem;
 	font-weight: 400;
 	opacity: 0;
-	animation: hellofriend 1000ms ease-in-out 400ms forwards;
+	animation: hellofriend 1000ms ease-out 800ms forwards;
 }
 .header_infoSection h1 {
 	position: relative;
 	font-size: 3rem;
 	font-weight: 600;
+	z-index: 2;
+	text-wrap: nowrap;
 }
 .header_infoSection h1::before {
 	content: "";
@@ -64,7 +68,7 @@
 	background: #832db4;
 	opacity: 0;
 	z-index: -1;
-	animation: headerUnderlineAnimate 1000ms ease-in-out 400ms forwards;
+	animation: headerUnderlineAnimate 1000ms ease-out 800ms forwards;
 }
 
 @keyframes headerUnderlineAnimate {
@@ -84,7 +88,7 @@
 	}
 	100% {
 		top: 0px;
-		opacity: 1;
+		opacity: 0.8;
 	}
 }
 
@@ -144,12 +148,6 @@
 	transform: rotate(25deg);
 }
 .crowContainer circle {
-	/* position: absolute; */
-	/* z-index: 1; */
-
-	/* top: -55px; */
-	/* left: 15px; */
-
 	width: 230px;
 	height: 230px;
 	border-radius: 50%;
@@ -159,8 +157,9 @@
 	stroke: var(--gold-color);
 	stroke-dasharray: 900;
 	stroke-dashoffset: 860;
+	opacity: calc(var(--line-opacity) + 0.1);
 
-	animation: haloExpand 1.5s ease 11s forwards;
+	animation: haloExpand 1.5s ease 8.5s forwards;
 }
 @keyframes haloExpand {
 	0% {
@@ -185,28 +184,31 @@
 }
 .crow_line {
 	position: absolute;
+	border-radius: 5px;
 
-	height: 3px;
 	background-color: var(--gold-color);
 	transition: all 0.2s ease-in-out;
 }
 .line1 {
+	height: 2px;
 	top: 60px;
 	width: 0px; /* will become 390px */
 	opacity: 0;
-	animation: lineExpand1 1s ease-in-out 12.8s forwards;
+	animation: lineExpand1 0.9s ease 9.4s forwards;
 }
 .line2 {
+	height: 3.5px;
 	top: 30px;
 	width: 0px; /* will become 450px */
 	opacity: 0;
-	animation: lineExpand2 1s ease-in-out 12.4s forwards;
+	animation: lineExpand2 0.9s ease 9.2s forwards;
 }
 .line3 {
+	height: 4px;
 	top: 0px;
 	width: 0px; /* will become 510px */
 	opacity: 0;
-	animation: lineExpand3 1s ease-in-out 12s forwards;
+	animation: lineExpand3 0.9s ease 9s forwards;
 }
 
 @keyframes lineExpand1 {
@@ -216,7 +218,7 @@
 	}
 	100% {
 		width: 390px;
-		opacity: 1;
+		opacity: calc(var(--line-opacity) - 0.3);
 	}
 }
 @keyframes lineExpand2 {
@@ -226,7 +228,7 @@
 	}
 	100% {
 		width: 450px;
-		opacity: 1;
+		opacity: calc(var(--line-opacity) - 0.2);
 	}
 }
 @keyframes lineExpand3 {
@@ -236,13 +238,6 @@
 	}
 	100% {
 		width: 510px;
-		opacity: 1;
+		opacity: calc(var(--line-opacity) - 0.1);
 	}
 }
-
-/*
-.crowContainer {}
-.crowContainer {}
-.crowContainer {}
-.crowContainer {}
-*/

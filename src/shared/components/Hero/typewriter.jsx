@@ -9,9 +9,9 @@ export default function TypeWriter() {
 			delay: 90,
 			cursor: "|",
 		});
-		TypewriterEff.pauseFor(3000)
+		TypewriterEff.pauseFor(2000)
 			.typeString("I build things, the cool")
-			.pauseFor(400)
+			.pauseFor(500)
 			.deleteChars(4)
 			.pauseFor(200)
 			.typeString("nerdy way. ")
