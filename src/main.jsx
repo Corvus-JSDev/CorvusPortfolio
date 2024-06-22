@@ -7,10 +7,10 @@ const bodyEL = document.querySelector("body");
 
 setTimeout(() => {
 	if (window.scrollY === 0) {
-		console.log("scroll hidden");
 		console.log(window.scrollY);
 
-		bodyEL.style.overflow = "hidden";
+		// TODO: uncomment this
+		// bodyEL.style.overflow = "hidden";
 	}
 }, 100);
 

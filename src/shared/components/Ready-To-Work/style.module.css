@@ -19,7 +19,20 @@
 
 	overflow: hidden;
 	padding: 10px 0px;
+
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0);
+
+	animation: shadowAnimation 1s ease 10s forwards;
 }
+@keyframes shadowAnimation {
+	0% {
+		box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+	}
+	100% {
+		box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+	}
+}
+
 .rtw_container * {
 	font-size: 1.4rem;
 	text-wrap: nowrap;

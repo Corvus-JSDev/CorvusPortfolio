@@ -5,6 +5,7 @@ import ReadyToWork from "./shared/components/Ready-To-Work/ReadyToWork.jsx";
 import ProjectsSection from "./shared/components/Projects-Section/projects.jsx";
 import SkillsSection from "./shared/components/Skills/Skills.jsx";
 import WhoAmI from "./shared/components/whoami/WhoAmI.jsx";
+import Contact from "./shared/components/Contact/Contact.jsx";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 			<ProjectsSection />
 			<SkillsSection />
 			<WhoAmI />
+			<Contact />
 		</>
 	);
 }

@@ -1,0 +1,135 @@
+/** Contact page */
+
+.contactContainer {
+	margin-top: 70px;
+	padding: 50px 0px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+
+	background-color: var(--secondary-background);
+	width: 100vw;
+
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.header_ContactSection {
+	position: relative;
+	font-size: 3rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	z-index: 2;
+	margin-bottom: 60px;
+}
+.header_ContactSection::before {
+	content: "";
+	position: absolute;
+	left: 170px;
+	top: 45px;
+	width: 370px;
+	height: 13px;
+	transform: skew(-30deg) translateX(-50%);
+	background: #832db4;
+	opacity: 1;
+	z-index: -1;
+}
+
+.contactPage {
+	margin-top: 30px;
+	background-color: #0c0f28;
+	width: 600px;
+	padding: 10px 50px 30px 50px !important;
+	height: 570px;
+	border-radius: 10px;
+}
+
+/** User Input */
+
+.inputContainer {
+	width: 100%;
+	margin-bottom: 15px;
+	min-height: 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.inputContainer textarea,
+.inputContainer input {
+	width: 100%;
+	background-color: transparent;
+}
+
+textarea:focus,
+textarea:active,
+input:focus,
+input:active {
+	outline: none;
+}
+
+input,
+textarea {
+	position: relative;
+	z-index: 5;
+}
+input {
+	border-bottom: 2px solid var(--gold-color);
+}
+textarea {
+	border: 2px solid var(--gold-color);
+	border-radius: 5px;
+	height: 130px;
+	resize: none !important;
+	margin-top: 5px !important;
+	margin-bottom: 20px !important;
+	padding: 5px !important;
+}
+h3 {
+	font-weight: 400 !important;
+	letter-spacing: 1px;
+	transition: all 0.2s ease;
+}
+button {
+	position: relative;
+	border: 2px solid var(--gold-color);
+	border-radius: 5px;
+	padding: 8px 25px !important;
+	font-weight: 500 !important;
+	letter-spacing: 1px !important;
+	transition: all 0.3s ease;
+	overflow: hidden;
+}
+
+/* We're selecting the previous sibling of the input (in this case the h3) */
+h3:has(+ input:placeholder-shown) {
+	/* There is NO text in the input felid */
+	font-size: 1.2rem;
+	position: relative;
+	top: 20px;
+	opacity: 1;
+}
+h3:has(+ input:not(:placeholder-shown)) {
+	/* There is text in the input felid */
+	font-size: 1rem;
+	position: relative;
+	top: 5px;
+	opacity: 0.8;
+}
+
+.linkContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.linkContainer img {
+	width: 30px;
+}
