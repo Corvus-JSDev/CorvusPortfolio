@@ -58,27 +58,6 @@ export default function Contact() {
 			</p>
 
 			<div className={style.contactPage}>
-				<div className={style.linkContainer}>
-					<a
-						target="_blank"
-						href="https://github.com/Corvus-JSDev"
-					>
-						<img src="/icons/github-mark-white-contact-white.png" />
-					</a>
-					<a
-						target="_blank"
-						href="https://www.linkedin.com/in/giovanni-squillace-42813a22b/"
-					>
-						<img src="/icons/linkedin-black-1687072478-contact-white.png" />
-					</a>
-					<a
-						target="_blank"
-						href="https://twitter.com/Corvus_JSDev"
-					>
-						<img src="/icons/twitter-x-logo-png-9-1207032165-contact-white.png" />
-					</a>
-				</div>
-
 				<UserInput
 					id="nameInput"
 					title="Name / Organization"

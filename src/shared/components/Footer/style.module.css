@@ -1,0 +1,17 @@
+.linkContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 25px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+.linkContainer img {
+	width: 30px;
+}
+
+.nameTitle {
+	font-weight: 500;
+	font-size: 1.2rem;
+	letter-spacing: 2px;
+}

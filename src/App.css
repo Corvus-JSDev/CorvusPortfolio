@@ -1,0 +1,28 @@
+.goldOutline {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 95vw;
+	height: 92lvh;
+	margin-top: 20px;
+	box-sizing: border-box;
+	background-color: transparent;
+	z-index: 999999;
+
+	pointer-events: none;
+}
+
+.goldOutline::before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border: 3px solid gold;
+	opacity: 0.5;
+	border-radius: 20px;
+	pointer-events: none;
+}
