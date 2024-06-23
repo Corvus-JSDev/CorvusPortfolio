@@ -9,7 +9,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 0px 70px;
-	margin-top: 35px;
+	margin-top: 25px;
 	max-width: 900px;
 }
 
@@ -20,9 +20,7 @@
 	font-weight: 600;
 	letter-spacing: 1px;
 	z-index: 2;
-	opacity: 0;
-
-	animation: projectsHeaderAnimation 1.3s ease 11s forwards;
+	opacity: 1;
 }
 .header_ProjectSection::before {
 	content: "";
@@ -35,16 +33,6 @@
 	background: #832db4;
 	opacity: 1;
 	z-index: -1;
-}
-@keyframes projectsHeaderAnimation {
-	0% {
-		opacity: 0;
-		bottom: 30px;
-	}
-	100% {
-		opacity: 1;
-		bottom: 0px;
-	}
 }
 
 /** Project Containers */

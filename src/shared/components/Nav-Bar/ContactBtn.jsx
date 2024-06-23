@@ -46,7 +46,7 @@ export default function ContactBtn() {
 
 	return (
 		<a
-			href="#"
+			href="#contact"
 			id="contact-btn"
 			className={style.contact_navbar}
 		>

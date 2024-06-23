@@ -10,8 +10,8 @@
 
 	/* border: 1px solid red; */
 	scale: 0.9;
-	margin-top: 10px;
-	margin-bottom: 50px;
+	margin-top: 50px;
+	margin-bottom: 20px;
 }
 
 /** INFO Section */
@@ -30,13 +30,6 @@
 	align-items: center;
 	/* padding: 0px 250px; */
 }
-
-/* im using this because padding messes with the flex width */
-/*
-.info_margin {
-	margin-left: 120px;
-}
-*/
 
 .header_infoSection {
 	margin-bottom: 20px;
@@ -159,7 +152,7 @@
 	stroke-dashoffset: 860;
 	opacity: calc(var(--line-opacity) + 0.1);
 
-	animation: haloExpand 1.5s ease 8.5s forwards;
+	animation: haloExpand 1.5s ease 9s forwards;
 }
 @keyframes haloExpand {
 	0% {
@@ -194,21 +187,21 @@
 	top: 60px;
 	width: 0px; /* will become 390px */
 	opacity: 0;
-	animation: lineExpand1 0.9s ease 9.4s forwards;
+	animation: lineExpand1 0.9s ease 10s forwards;
 }
 .line2 {
 	height: 3.5px;
 	top: 30px;
 	width: 0px; /* will become 450px */
 	opacity: 0;
-	animation: lineExpand2 0.9s ease 9.2s forwards;
+	animation: lineExpand2 0.9s ease 9.7s forwards;
 }
 .line3 {
 	height: 4px;
 	top: 0px;
 	width: 0px; /* will become 510px */
 	opacity: 0;
-	animation: lineExpand3 0.9s ease 9s forwards;
+	animation: lineExpand3 0.9s ease 9.5s forwards;
 }
 
 @keyframes lineExpand1 {

@@ -11,13 +11,23 @@ import Footer from "./shared/components/Footer/Footer.jsx";
 function App() {
 	return (
 		<>
-			<div className="goldOutline"></div>
+			<a id="top"></a>
+			<div className="goldOutline">
+				<h1>Giovanni Squillace</h1>
+				<div className="birdLogoContainer">
+					<img src="/imgs/birds/simple-stroke-crow-outline.png" />
+				</div>
+				<h1>Web Developer</h1>
+			</div>
 			<NavBar />
 			<HeroSection />
 			<ReadyToWork />
+			<a id="projects"></a>
 			<ProjectsSection />
 			<SkillsSection />
+			<a id="whoami"></a>
 			<WhoAmI />
+			<a id="contact"></a>
 			<Contact />
 			<Footer />
 		</>

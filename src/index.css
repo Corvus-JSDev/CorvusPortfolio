@@ -25,6 +25,7 @@
 	scrollbar-width: thin;
 	/* scrollbar-color: #997d2a var(--background-purple); */
 	scrollbar-color: #997d2a rgb(37, 16, 53);
+	scroll-behavior: smooth;
 }
 body {
 	position: relative;
