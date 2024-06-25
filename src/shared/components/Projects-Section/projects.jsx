@@ -42,7 +42,7 @@ export default function ProjectsSection() {
 				>
 					<ProjectContainer
 						live={true}
-						thumbnail="FillerImg.png"
+						thumbnail="/project-thumbnails/AutoMatcher.png"
 						techUsed1="vite.png"
 						techUsed2="react-logo.png"
 						techUsed3="tailwind.png"

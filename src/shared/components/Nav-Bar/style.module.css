@@ -1,4 +1,6 @@
 .navBar_container {
+	scale: 0.9;
+
 	background-color: rgba(21, 19, 42, 0.4);
 	backdrop-filter: blur(2px);
 	border-radius: 10px;
