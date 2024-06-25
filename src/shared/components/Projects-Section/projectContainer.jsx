@@ -10,6 +10,9 @@ category: is 1-3 words about what the thing is
 title: obv the title
 
 desc: again obv
+
+live: true or false
+is the site live for demo view?
 */
 
 export default function ProjectContainer(props) {
@@ -85,10 +88,22 @@ export default function ProjectContainer(props) {
 					<p className={style.desc}>{shortDesc}</p>
 				</div>
 
-				<img
+				{/* <img
 					className={style.externalLink}
 					src="icons/external-link.png"
-				/>
+				/> */}
+
+				<div className={style.buttonContainers}>
+					{props.live && (
+						<a
+							href=""
+							className={style.previewBTN}
+						>
+							Preview
+						</a>
+					)}
+					<a href="">Source Code</a>
+				</div>
 			</div>
 		</div>
 	);

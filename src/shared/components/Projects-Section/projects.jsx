@@ -21,6 +21,7 @@ export default function ProjectsSection() {
 
 				<div className={style.mainProject}>
 					<ProjectContainer
+						live={true}
 						thumbnail="/project-thumbnails/JourneyLens-thumbnail.jpg"
 						techUsed1="nextjs-logo-edit.png"
 						techUsed2="mongodb-logo.png"
@@ -40,6 +41,7 @@ export default function ProjectsSection() {
 					className={style.secondaryProjects}
 				>
 					<ProjectContainer
+						live={true}
 						thumbnail="FillerImg.png"
 						techUsed1="vite.png"
 						techUsed2="react-logo.png"
@@ -53,6 +55,7 @@ export default function ProjectsSection() {
 
 				<div className={style.forthProjects}>
 					<ProjectContainer
+						live={true}
 						thumbnail="FillerImg.png"
 						techUsed1="vite.png"
 						techUsed2="react-logo.png"
@@ -67,6 +70,7 @@ export default function ProjectsSection() {
 				<div className={style.thirdProjects}>
 					<div className={style.thirdChild1}>
 						<ProjectContainer
+							live={false}
 							thumbnail="../project-thumbnails/ByteCreations.webp"
 							techUsed1="vite.png"
 							techUsed2="react-logo.png"
@@ -83,6 +87,7 @@ export default function ProjectsSection() {
 
 					<div className={style.thirdChild2}>
 						<ProjectContainer
+							live={false}
 							thumbnail="../project-thumbnails/Sitemockup.webp"
 							techUsed1="nextjs-logo-edit.png"
 							techUsed2="vite.png"

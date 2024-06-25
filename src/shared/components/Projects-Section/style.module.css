@@ -108,7 +108,6 @@
 }
 .thumbnailOverlay:hover {
 	opacity: 1;
-	cursor: pointer;
 }
 .thumbnailOverlay::after {
 	/* Vignette effect */
@@ -129,7 +128,7 @@
 
 .infoSection {
 	position: absolute;
-	bottom: 20px;
+	bottom: 60px;
 	left: 15px;
 
 	background: rgb(0, 0, 0);
@@ -178,4 +177,38 @@
 	width: 40px;
 	filter: invert(1);
 	opacity: 0.7;
+}
+
+.buttonContainers {
+	/* border: 2px solid red; */
+
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	/* padding: 0px 100px; */
+}
+.buttonContainers a {
+	border: 2px solid rgba(208, 158, 8, 0.6);
+	border-radius: 8px;
+	padding: 5px 15px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.3);
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+.buttonContainers a:hover {
+	background-color: rgba(208, 158, 8, 0.15);
+}
+.previewBTN {
+	position: relative;
+	left: 20px;
 }
