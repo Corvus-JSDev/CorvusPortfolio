@@ -12,14 +12,14 @@ function App() {
 	return (
 		<>
 			<a id="top"></a>
+			<NavBar />
 			<div className="goldOutline">
-				<h1>Giovanni Squillace</h1>
+				<h1>Corvus.Dev</h1>
 				<div className="birdLogoContainer">
 					<img src="/imgs/birds/simple-stroke-crow-outline.png" />
 				</div>
 				<h1>Web Developer</h1>
 			</div>
-			<NavBar />
 			<HeroSection />
 			<ReadyToWork />
 			<a id="projects"></a>

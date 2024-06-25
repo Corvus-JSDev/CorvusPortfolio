@@ -21,7 +21,7 @@ export default function ProjectsSection() {
 
 				<div className={style.mainProject}>
 					<ProjectContainer
-						thumbnail="FillerImg.png"
+						thumbnail="/project-thumbnails/JourneyLens-thumbnail.jpg"
 						techUsed1="nextjs-logo-edit.png"
 						techUsed2="mongodb-logo.png"
 						techUsed3="express-js-icon-edit.png"
@@ -67,7 +67,7 @@ export default function ProjectsSection() {
 				<div className={style.thirdProjects}>
 					<div className={style.thirdChild1}>
 						<ProjectContainer
-							thumbnail="FillerImg.png"
+							thumbnail="../project-thumbnails/ByteCreations.webp"
 							techUsed1="vite.png"
 							techUsed2="react-logo.png"
 							techUsed3="jQuery.png"
@@ -83,14 +83,14 @@ export default function ProjectsSection() {
 
 					<div className={style.thirdChild2}>
 						<ProjectContainer
-							thumbnail="FillerImg.png"
+							thumbnail="../project-thumbnails/Sitemockup.webp"
 							techUsed1="nextjs-logo-edit.png"
 							techUsed2="vite.png"
 							techUsed3="react-logo.png"
 							techUsed4="tailwind.png"
 							techUsed5="node-js-logo-edited.png"
 							techUsed6="jQuery.png"
-							category="Travel Social Media"
+							category="Pet Projects"
 							title="Mockup sites"
 							desc="Everyone needs to show off their skills somehow, and what better way is there than to create tangible sites to show that. It also helps future partners get a better idea about what they want and how their site can look"
 						/>
