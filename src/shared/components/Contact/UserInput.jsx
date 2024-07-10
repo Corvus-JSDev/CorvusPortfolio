@@ -4,6 +4,8 @@ import style from "./style.module.css";
 
 title
 
+titleID
+
 id
 
 divID
@@ -20,7 +22,7 @@ export default function UserInput(props) {
 				id={props.divID}
 				className={style.inputContainer}
 			>
-				{props.title && <h3>{props.title}</h3>}
+				{props.title && <h2>{props.title}</h2>}
 
 				<textarea
 					id={props.id}
@@ -35,9 +37,10 @@ export default function UserInput(props) {
 			id={props.divID}
 			className={style.inputContainer}
 		>
-			{props.title && <h3>{props.title}</h3>}
+			{props.title && <h3 id={props.titleID}>{props.title}</h3>}
 			<input
 				type="text"
+				id={props.inputID}
 				placeholder={props.placeholder || " "}
 			/>
 		</div>

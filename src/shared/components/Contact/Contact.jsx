@@ -44,6 +44,44 @@ export default function Contact() {
 		submitBtn.addEventListener("mouseover", () => {
 			startSubmitBtnShine();
 		});
+
+		function handleInputFocusAndBlur(inputEl, titleEl) {
+			// focus on the input if the title gets clicked
+			titleEl.addEventListener("click", () => {
+				inputEl.focus();
+			});
+
+			// move the title when the input is in focus
+			inputEl.addEventListener("focus", () => {
+				titleEl.style.fontSize = "1rem";
+				titleEl.style.top = "5px";
+				titleEl.style.opacity = "0.8";
+			});
+
+			// put the title if the input is empty
+			inputEl.addEventListener("blur", () => {
+				if (inputEl.value === "") {
+					titleEl.style.fontSize = "1.2rem";
+					titleEl.style.top = "20px";
+					titleEl.style.opacity = "1";
+				}
+			});
+		}
+
+		// Name Felid
+		const nameTitleEl = document.querySelector("#name");
+		const nameInputEl = document.querySelector("#inputName");
+		handleInputFocusAndBlur(nameInputEl, nameTitleEl);
+
+		// Email Felid
+		const emailTitleEl = document.querySelector("#email");
+		const emailInputEl = document.querySelector("#inputEmail");
+		handleInputFocusAndBlur(emailInputEl, emailTitleEl);
+
+		// Subject Felid
+		const subjectTitleEl = document.querySelector("#subject");
+		const subjectInputEl = document.querySelector("#inputSubject");
+		handleInputFocusAndBlur(subjectInputEl, subjectTitleEl);
 	});
 
 	return (
@@ -61,16 +99,22 @@ export default function Contact() {
 				<UserInput
 					id="nameInput"
 					title="Name / Organization"
+					titleID="name"
+					inputID="inputName"
 				/>
 
 				<UserInput
 					id="emailInput"
 					title="Your Email"
+					titleID="email"
+					inputID="inputEmail"
 				/>
 
 				<UserInput
 					id="subjectInput"
 					title="Subject"
+					titleID="subject"
+					inputID="inputSubject"
 				/>
 
 				<hr style={{ border: "none", marginTop: "40px" }} />
@@ -79,6 +123,7 @@ export default function Contact() {
 					type="area"
 					id="messageInput"
 					title="Message"
+					titleID="message"
 				/>
 
 				<div
