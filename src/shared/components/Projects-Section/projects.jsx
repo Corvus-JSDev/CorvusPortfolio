@@ -56,7 +56,7 @@ export default function ProjectsSection() {
 				<div className={style.forthProjects}>
 					<ProjectContainer
 						live={true}
-						thumbnail="FillerImg.png"
+						thumbnail="/project-thumbnails/WiseWealthImg.png"
 						techUsed1="vite.png"
 						techUsed2="react-logo.png"
 						techUsed3="tailwind.png"
