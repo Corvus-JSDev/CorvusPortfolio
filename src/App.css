@@ -57,3 +57,39 @@
 .goldOutline h1 {
 	bottom: 14px;
 }
+
+/** Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	body {
+		background-color: lightblue !important;
+	}
+}
+/* Small devices */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	body {
+		background-color: green !important;
+	}
+}
+
+/* Medium devices */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+	body {
+		background-color: red !important;
+	}
+}
+
+/* Large devices */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+	body {
+		background-color: blue !important;
+	}
+}
+
+/* Extra large devices */
+@media only screen and (min-width: 1201px) {
+	body {
+		background-color: purple !important;
+	}
+}
