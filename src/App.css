@@ -65,11 +65,19 @@
 	body {
 		background-color: lightblue !important;
 	}
+
+	.goldOutline {
+		display: none;
+	}
 }
 /* Small devices */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
 	body {
 		background-color: green !important;
+	}
+
+	.goldOutline {
+		display: none;
 	}
 }
 
@@ -77,6 +85,10 @@
 @media only screen and (min-width: 769px) and (max-width: 992px) {
 	body {
 		background-color: red !important;
+	}
+
+	.goldOutline {
+		display: none;
 	}
 }
 

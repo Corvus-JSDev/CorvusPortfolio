@@ -66,15 +66,21 @@ export default function HeroSection() {
 					<div className={style.desc_infoSection}>
 						<TypeWriter />
 						<p style={{ maxWidth: "400px" }}>
-							I am a software engineer specializing in
-							front-end web development, focused on creating an
-							marvelous human-centric experience.
+							I am a software engineer specializing in front-end web
+							development, focused on creating an marvelous human-centric
+							experience.
 						</p>
 					</div>
 
 					<button
 						id="workBtn"
 						className={style.workTogetherBtn}
+						onClick={() => {
+							window.scrollTo({
+								top: document.body.scrollHeight,
+								behavior: "smooth",
+							});
+						}}
 					>
 						Lets work together!
 					</button>
@@ -98,15 +104,9 @@ export default function HeroSection() {
 						></circle>
 					</svg>
 					<div className={style.lineContainer}>
-						<div
-							className={`${style.crow_line} ${style.line1}`}
-						></div>
-						<div
-							className={`${style.crow_line} ${style.line2}`}
-						></div>
-						<div
-							className={`${style.crow_line} ${style.line3}`}
-						></div>
+						<div className={`${style.crow_line} ${style.line1}`}></div>
+						<div className={`${style.crow_line} ${style.line2}`}></div>
+						<div className={`${style.crow_line} ${style.line3}`}></div>
 					</div>
 				</div>
 			</section>
