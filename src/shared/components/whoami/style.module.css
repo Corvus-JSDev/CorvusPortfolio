@@ -35,5 +35,9 @@
 	line-height: 2;
 	font-size: 1.2rem;
 	text-indent: 30px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.textContainer b {
+	font-weight: 600 !important;
 }

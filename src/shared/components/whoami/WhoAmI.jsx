@@ -14,39 +14,41 @@ export default function WhoAmI() {
 						marginBottom: "35px",
 					}}
 				>
-					Knowing the person you're hiring has the skills is
-					great and all, but what you're really here to find is
-					who they are. What's their mindset? How do they respond
-					to rigorous challenges? And hundreds of other
-					questions.
+					Knowing the person you're hiring has the right skills is crucial,
+					but discovering exactly <b>who</b> they are is paramount. What
+					drives their mindset? How do they tackle rigorous challenges? And
+					hundreds of other questions.
 				</p>
 
 				<p>
-					So, who is Giovanni? Well, if you want benchmarks, I'm
-					a Choleric (analytical leader) with an INTP (Logician)
-					personality.
+					So, who exactly is Giovanni? Well, if you're like me and like
+					benchmarks, I'm a Choleric (analytical leader) with an INTP
+					(Logician) personality.
 				</p>
 				<p>
-					Some of the most extraordinary and influential people
-					in the world are also Choleric INTPs, people like:{" "}
-					<b>Albert Einstein</b>, <b>Nikola Tesla</b>, and{" "}
-					<b>Bill Gates</b>, are just a few examples. Who
-					wouldn't want one of them on their team?
+					This combination aligns with some of history's most influential
+					minds such as <b>Albert Einstein</b>, <b>Nikola Tesla</b>, and{" "}
+					<b>Bill Gates</b> — all Choleric INTPs, known for their
+					astonishing contributions to humanity. Imagine having that
+					caliber of thinking on your team.
 				</p>
+
 				<p>
-					I'm extremely goal-oriented, practical, and a great
-					problem solver. People like me are known to be
-					independent and rational thinkers that you can always
-					count on to think outside the box to solve the hardest
-					problems. I have an open mind that loves to hear other
-					people's ideas and trains of thought. I'm always asking
-					why, and always Curious to the point where, if I were a
-					cat, I'd be dead decades ago. Not only that, but I
-					constantly crave intellectual stimulation, the pursuit
-					of new ideas, and opportunities to solve the most
-					challenging puzzles. I have a Sherlock Holmes-like
-					ability to wrap my brain around whatever complex
-					problems are placed in front of me.
+					I am highly goal-oriented, practical, and adept at
+					problem-solving. My independence and rationality, is what makes
+					me thrive on exploring innovative solutions that go beyond the
+					conventional boundaries. I actively seek diverse perspectives and
+					will be forever curious — always probing deeper and embracing
+					intellectual challenges.
+				</p>
+
+				<p>
+					With a proven track record in analytical leadership and a
+					deep-seated curiosity for solving intricate challenges, I am
+					enthusiastic about bringing my skills and perspective to a
+					software engineering role. I am eager to contribute to a team
+					that values innovation, continuous learning, and the overall
+					betterment of humanity.
 				</p>
 			</div>
 		</div>
