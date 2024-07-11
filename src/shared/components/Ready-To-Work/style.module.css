@@ -45,3 +45,24 @@
 .rtw_container h3 {
 	font-weight: 400;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.rtw_container h1,
+	.rtw_container h3 {
+		font-size: 1rem;
+	}
+	.rtw_container {
+		gap: 15px;
+	}
+}
+/* Small devices */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	.rtw_container h1,
+	.rtw_container h3 {
+		font-size: 1rem;
+	}
+	.rtw_container {
+		gap: 15px;
+	}
+}

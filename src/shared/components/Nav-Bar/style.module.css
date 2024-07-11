@@ -63,3 +63,23 @@
 	/* It also works because the shine effect uses the ::before class */
 	display: none;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.navBar_container {
+		display: none;
+	}
+}
+/* Small devices */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	.navBar_container {
+		display: none;
+	}
+}
+
+/* Medium devices */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+	.navBar_container {
+		display: none;
+	}
+}

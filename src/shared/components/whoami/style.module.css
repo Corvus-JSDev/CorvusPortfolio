@@ -41,3 +41,18 @@
 .textContainer b {
 	font-weight: 600 !important;
 }
+
+/** Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.textContainer {
+		padding: 0px 30px;
+	}
+}
+/* Small devices */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	.textContainer {
+		padding: 0px 30px;
+	}
+}

@@ -8,13 +8,7 @@ export default function ProjectsSection() {
 				<h1 className={style.header_ProjectSection}>Projects</h1>
 				<code
 					title="No, not me! The project cards"
-					style={{
-						backgroundColor: "rgba(84, 29, 115, 0.5)",
-						padding: "1px 4px",
-						borderRadius: "5px",
-						fontSize: "0.7rem",
-						marginTop: "40px",
-					}}
+					style={{ marginTop: "30px" }}
 				>
 					[Hover]
 				</code>

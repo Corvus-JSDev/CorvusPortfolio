@@ -96,3 +96,46 @@
 	align-items: center;
 	margin-bottom: 20px;
 }
+
+/** Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.skillsContainer {
+		padding: 0px;
+		padding-bottom: 40px;
+	}
+	.techContainer {
+		flex-direction: column;
+	}
+	.techHeader {
+		margin-top: 20px;
+	}
+}
+/* Small devices */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	.skillsContainer {
+		padding: 0px;
+		padding-bottom: 40px;
+	}
+	.techContainer {
+		flex-direction: column;
+	}
+	.techHeader {
+		margin-top: 20px;
+	}
+}
+
+/* Medium devices */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+	.skillsContainer {
+		padding: 20px 0px 40px 0px;
+	}
+}
+
+/* Large devices */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+	.skillsContainer {
+		padding: 20px 130px 40px 130px;
+	}
+}

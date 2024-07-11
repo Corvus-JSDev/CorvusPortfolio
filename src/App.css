@@ -26,8 +26,8 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	border: 3px solid gold;
-	opacity: 0.5;
+	border: 3px solid var(--gold-color);
+	opacity: 0.6;
 	border-radius: 20px;
 	pointer-events: none;
 }
@@ -63,7 +63,8 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 	body {
-		background-color: lightblue !important;
+		/* background-color: black !important; */
+		padding: 0px !important;
 	}
 
 	.goldOutline {
@@ -73,7 +74,8 @@
 /* Small devices */
 @media only screen and (min-width: 601px) and (max-width: 768px) {
 	body {
-		background-color: green !important;
+		/* background-color: green !important; */
+		padding: 0px !important;
 	}
 
 	.goldOutline {
@@ -84,7 +86,8 @@
 /* Medium devices */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
 	body {
-		background-color: red !important;
+		/* background-color: red !important; */
+		padding-top: 0px !important;
 	}
 
 	.goldOutline {
@@ -95,13 +98,13 @@
 /* Large devices */
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
 	body {
-		background-color: blue !important;
+		/* background-color: blue !important; */
 	}
 }
 
 /* Extra large devices */
 @media only screen and (min-width: 1201px) {
 	body {
-		background-color: purple !important;
+		/* background-color: purple !important; */
 	}
 }
