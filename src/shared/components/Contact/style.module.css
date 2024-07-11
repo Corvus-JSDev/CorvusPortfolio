@@ -117,22 +117,53 @@ button {
 	overflow: hidden;
 }
 
-/* We're selecting the previous sibling of the input (in this case the h3) */
-/*
-h3:has(+ input:placeholder-shown) {
-	/* There is NO text in the input felid 
+/** Media Queries */
 
-	font-size: 1.2rem;
-	position: relative;
-	top: 20px;
-	opacity: 1;
-}
-h3:has(+ input:not(:placeholder-shown)) {
-	/* There is text in the input felid 
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.header_ContactSection {
+		font-size: 1.5rem;
+	}
+	.header_ContactSection::before {
+		top: 20px;
+		width: 200px;
+		height: 10px;
+		left: 95px;
+	}
 
-	font-size: 1rem;
-	position: relative;
-	top: 5px;
-	opacity: 0.8;
+	.contactContainer {
+		padding-top: 20px;
+		justify-content: flex-start;
+		height: 575px;
+	}
+
+	.contactPage {
+		scale: 0.7;
+		position: relative;
+		bottom: 70px;
+	}
 }
-*/
+/* Small devices */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	.header_ContactSection {
+		font-size: 1.5rem;
+	}
+	.header_ContactSection::before {
+		top: 20px;
+		width: 200px;
+		height: 10px;
+		left: 95px;
+	}
+
+	.contactContainer {
+		padding-top: 20px;
+		justify-content: flex-start;
+		height: 575px;
+	}
+
+	.contactPage {
+		scale: 0.7;
+		position: relative;
+		bottom: 70px;
+	}
+}

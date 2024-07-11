@@ -104,6 +104,7 @@
 	.skillsContainer {
 		padding: 0px;
 		padding-bottom: 40px;
+		padding-top: 20px;
 	}
 	.techContainer {
 		flex-direction: column;
@@ -117,6 +118,7 @@
 	.skillsContainer {
 		padding: 0px;
 		padding-bottom: 40px;
+		padding-top: 20px;
 	}
 	.techContainer {
 		flex-direction: column;
