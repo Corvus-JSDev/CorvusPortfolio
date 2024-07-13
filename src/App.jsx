@@ -24,6 +24,7 @@ function App() {
 			<ReadyToWork />
 			<a id="projects"></a>
 			<ProjectsSection />
+			<a id="skills"></a>
 			<SkillsSection />
 			<a id="whoami"></a>
 			<WhoAmI />
