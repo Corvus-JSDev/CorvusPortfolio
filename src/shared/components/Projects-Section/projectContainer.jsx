@@ -13,6 +13,8 @@ desc: again obv
 
 live: true or false
 is the site live for demo view?
+
+code/liveView
 */
 
 export default function ProjectContainer(props) {
@@ -21,15 +23,11 @@ export default function ProjectContainer(props) {
 	if (props.desc.length > 170) {
 		let truncatedDesc = props.desc.substring(0, 170);
 		// Check if the 171st character is part of a word
-		if (
-			props.desc.charAt(170) !== " " &&
-			props.desc.charAt(171) !== " "
-		) {
+		if (props.desc.charAt(170) !== " " && props.desc.charAt(171) !== " ") {
 			// Find the last space within the first 170 characters
 			let lastSpaceIndex = truncatedDesc.lastIndexOf(" ");
 			if (lastSpaceIndex !== -1) {
-				shortDesc =
-					truncatedDesc.substring(0, lastSpaceIndex) + " ...";
+				shortDesc = truncatedDesc.substring(0, lastSpaceIndex) + " ...";
 			}
 		} else {
 			shortDesc = truncatedDesc + " ...";
@@ -50,59 +48,40 @@ export default function ProjectContainer(props) {
 			<div className={style.thumbnailOverlay}>
 				<div className={style.techUsed}>
 					{/* take in different icons imgs */}
-					{props.techUsed1 && (
-						<img src={`icons/${props.techUsed1}`} />
-					)}
-					{props.techUsed2 && (
-						<img src={`icons/${props.techUsed2}`} />
-					)}
-					{props.techUsed3 && (
-						<img src={`icons/${props.techUsed3}`} />
-					)}
-					{props.techUsed4 && (
-						<img src={`icons/${props.techUsed4}`} />
-					)}
-					{props.techUsed5 && (
-						<img src={`icons/${props.techUsed5}`} />
-					)}
-					{props.techUsed6 && (
-						<img src={`icons/${props.techUsed6}`} />
-					)}
-					{props.techUsed7 && (
-						<img src={`icons/${props.techUsed7}`} />
-					)}
-					{props.techUsed8 && (
-						<img src={`icons/${props.techUsed8}`} />
-					)}
-					{props.techUsed9 && (
-						<img src={`icons/${props.techUsed9}`} />
-					)}
+					{props.techUsed1 && <img src={`icons/${props.techUsed1}`} />}
+					{props.techUsed2 && <img src={`icons/${props.techUsed2}`} />}
+					{props.techUsed3 && <img src={`icons/${props.techUsed3}`} />}
+					{props.techUsed4 && <img src={`icons/${props.techUsed4}`} />}
+					{props.techUsed5 && <img src={`icons/${props.techUsed5}`} />}
+					{props.techUsed6 && <img src={`icons/${props.techUsed6}`} />}
+					{props.techUsed7 && <img src={`icons/${props.techUsed7}`} />}
+					{props.techUsed8 && <img src={`icons/${props.techUsed8}`} />}
+					{props.techUsed9 && <img src={`icons/${props.techUsed9}`} />}
 				</div>
 
 				<div className={style.infoSection}>
-					<code className={style.category}>
-						{props.category}
-					</code>
+					<code className={style.category}>{props.category}</code>
 					<h1 className={style.title}>{props.title}</h1>
 
 					<p className={style.desc}>{shortDesc}</p>
 				</div>
 
-				{/* <img
-					className={style.externalLink}
-					src="icons/external-link.png"
-				/> */}
-
 				<div className={style.buttonContainers}>
 					{props.live && (
 						<a
-							href=""
+							target="_blank"
+							href={props.liveView}
 							className={style.previewBTN}
 						>
 							Preview
 						</a>
 					)}
-					<a href="">Source Code</a>
+					<a
+						target="_blank"
+						href={props.code}
+					>
+						Source Code
+					</a>
 				</div>
 			</div>
 		</div>

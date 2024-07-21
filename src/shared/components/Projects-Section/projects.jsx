@@ -25,6 +25,8 @@ export default function ProjectsSection() {
 						techUsed6="tailwind.png"
 						techUsed7="Docker-logo.png"
 						category="Travel Social Media"
+						code="https://github.com/Corvus-JSDev/JourneyLens"
+						liveView="https://journeylensapp.netlify.app/"
 						title="JourneyLens"
 						desc="I created this full-stack app which allows users to showcase their global travels by logging in, accessing their profiles, and creating posts to share their vacation experiences with friends."
 					/>
@@ -41,8 +43,9 @@ export default function ProjectsSection() {
 						techUsed2="react-logo.png"
 						techUsed3="tailwind.png"
 						techUsed4="jQuery.png"
-						category="Car model comparison tool "
+						category="Car model comparison tool"
 						title="AutoMatcher"
+						code="https://github.com/Corvus-JSDev/AutoMatcher"
 						desc="I was in the market for a new car when I quickly realized that checking five different sites in order to comb through thousands of different models was going to take forever. So I created AutoMatcher, it pulls car data from an API in order to make it easy for the user to compare the specs of different makes and models."
 					/>
 				</div>
@@ -56,6 +59,7 @@ export default function ProjectsSection() {
 						techUsed3="tailwind.png"
 						techUsed4="jQuery.png"
 						category="Financial Helper / Planner "
+						code="https://github.com/Corvus-JSDev/WiseWealth"
 						title="WiseWealth"
 						desc="Like lots of people my age, trying to understand exactly how this complex financial system works can be daunting and tiresome. It also doesn't help that some financial sites can be completely wrong, and others too complex for someone to grasp quickly. So I made an all-in-one shop for understanding things like: If you can afford and qualify for a mortgage, what is your actual take home pay, and how much is that new car actually going to cost you."
 					/>
@@ -74,6 +78,7 @@ export default function ProjectsSection() {
 							techUsed6="tailwind.png"
 							techUsed7="Docker-logo.png"
 							category="Pet Projects"
+							code="https://github.com/Corvus-JSDev/ByteCreations"
 							title="ByteCreations"
 							desc="These are the bits and bobs I've created. It contains a plethora of big and small UI components from 3D login screens, to fancy buttons."
 						/>

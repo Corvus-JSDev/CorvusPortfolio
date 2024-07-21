@@ -45,8 +45,30 @@
 	background-color: #0c0f28;
 	width: 600px;
 	padding: 20px 50px 30px 50px !important;
-	height: 570px;
+	height: 550px;
+	/* will become 600 when message pops up */
 	border-radius: 10px;
+	transition: height 0.3s ease;
+}
+
+.buttonContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 25px;
+	padding: 0px 100px;
+}
+.loadingDiv {
+	width: 100%;
+	height: 40px;
+	border-radius: 8px;
+	opacity: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	transition: opacity 0.5s ease;
 }
 
 /** User Input */
