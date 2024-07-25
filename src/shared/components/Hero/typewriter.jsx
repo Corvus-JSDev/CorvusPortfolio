@@ -3,13 +3,14 @@ import { useEffect } from "react";
 
 export default function TypeWriter() {
 	useEffect(() => {
-		const typeWriterEffectEL =
-			document.querySelector("#typedEffect");
+		const typeWriterEffectEL = document.querySelector("#typedEffect");
 		const TypewriterEff = new Typewriter(typeWriterEffectEL, {
 			delay: 90,
-			cursor: "|",
+			cursor: " ",
 		});
-		TypewriterEff.pauseFor(2000)
+		TypewriterEff.pauseFor(1800)
+			.changeCursor("|")
+			.pauseFor(700)
 			.typeString("I build things, the cool")
 			.pauseFor(500)
 			.deleteChars(4)
