@@ -193,21 +193,21 @@
 	top: 60px;
 	width: 0px; /* will become 390px */
 	opacity: 0;
-	animation: lineExpand1 0.8s ease 800ms forwards;
+	animation: lineExpand1 0.8s ease 1000ms forwards;
 }
 .line2 {
 	height: 3.5px;
 	top: 30px;
 	width: 0px; /* will become 450px */
 	opacity: 0;
-	animation: lineExpand2 0.8s ease 650ms forwards;
+	animation: lineExpand2 0.8s ease 800ms forwards;
 }
 .line3 {
 	height: 4px;
 	top: 0px;
 	width: 0px; /* will become 510px */
 	opacity: 0;
-	animation: lineExpand3 0.8s ease 500ms forwards;
+	animation: lineExpand3 0.8s ease 600ms forwards;
 }
 
 @keyframes lineExpand1 {
@@ -250,7 +250,7 @@
 		transform: translateX(-50%);
 	}
 	.infoSection {
-		scale: 0.8;
+		scale: 0.7;
 	}
 
 	.logoSection {
@@ -276,7 +276,7 @@
 
 	.infoSection {
 		z-index: 9;
-		scale: 0.8;
+		scale: 0.7;
 	}
 	.logoSection {
 		top: 150px;

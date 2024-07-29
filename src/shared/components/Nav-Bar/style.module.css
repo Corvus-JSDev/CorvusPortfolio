@@ -52,7 +52,7 @@
 
 	margin-left: 10px;
 	border: 2px solid var(--gold-color);
-	border-radius: 8px;
+	border-radius: 5px;
 	padding: 5px 15px;
 	color: var(--gold-color);
 	font-weight: 500;
@@ -60,8 +60,11 @@
 }
 .contact_navbar::after {
 	/* This disables the underline from being shown */
-	/* It also works because the shine effect uses the ::before class */
 	display: none;
+}
+.contact_navbar span {
+	position: relative;
+	/* bottom: 2px; */
 }
 
 /* Extra small devices (phones, 600px and down) */

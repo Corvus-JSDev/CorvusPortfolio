@@ -19,6 +19,7 @@ code/liveView
 
 export default function ProjectContainer(props) {
 	// shorten description for the preview
+	/*
 	let shortDesc;
 	if (props.desc.length > 170) {
 		let truncatedDesc = props.desc.substring(0, 170);
@@ -35,6 +36,7 @@ export default function ProjectContainer(props) {
 	} else {
 		shortDesc = props.desc;
 	}
+	*/
 
 	return (
 		<div className={style.overallContainer}>
@@ -63,7 +65,7 @@ export default function ProjectContainer(props) {
 					<code className={style.category}>{props.category}</code>
 					<h1 className={style.title}>{props.title}</h1>
 
-					<p className={style.desc}>{shortDesc}</p>
+					<p className={style.desc}>{props.desc}</p>
 				</div>
 
 				<div className={style.buttonContainers}>
@@ -73,7 +75,7 @@ export default function ProjectContainer(props) {
 							href={props.liveView}
 							className={style.previewBTN}
 						>
-							Preview
+							Live Demo
 						</a>
 					)}
 					<a

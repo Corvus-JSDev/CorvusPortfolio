@@ -50,7 +50,7 @@ export default function ContactBtn() {
 			id="contact-btn"
 			className={style.contact_navbar}
 		>
-			Contact
+			<span>Contact</span>
 		</a>
 	);
 }

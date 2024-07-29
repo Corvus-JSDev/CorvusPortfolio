@@ -54,6 +54,7 @@
 	}
 	.rtw_container {
 		gap: 15px;
+		height: 35px;
 	}
 }
 /* Small devices */
@@ -64,5 +65,6 @@
 	}
 	.rtw_container {
 		gap: 15px;
+		height: 35px;
 	}
 }

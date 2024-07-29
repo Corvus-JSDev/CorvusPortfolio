@@ -121,28 +121,20 @@ export default function Contact() {
 		const contactPage = document.querySelector("#contactPage");
 		const loadingPar = document.querySelector("#loadingPar");
 
-		document.getElementById("contact-form").addEventListener("submit", () => {
-			event.preventDefault();
+		document
+			.getElementById("contact-form")
+			.addEventListener("submit", function (event) {
+				event.preventDefault();
 
-			/* 
-document
-.getElementById("contact-form")
-.addEventListener("submit", function (event) {
-	event.preventDefault();
-
-	emailjs
-	.sendForm("service_42fldca", "template_rw9gt3l", this)
-						.then(
-							function (response) {
-								SUCCESSFULLYSentEmail();
-							},
-							function (error) {
-								FAILEDSentEmail();
-								},
-								);
-								});
-							*/
-		});
+				emailjs.sendForm("service_42fldca", "template_rw9gt3l", this).then(
+					function (response) {
+						SUCCESSFULLYSentEmail();
+					},
+					function (error) {
+						FAILEDSentEmail();
+					},
+				);
+			});
 	});
 
 	return (
