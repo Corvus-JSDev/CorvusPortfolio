@@ -67,6 +67,21 @@ export default function ProjectsSection() {
 					/>
 				</div>
 
+				<div className={style.secondaryProjects}>
+					<ProjectContainer
+						thumbnail="/project-thumbnails/FastConversion.png"
+						techUsed1="nextjs-logo-edit.png"
+						techUsed3="express-js-icon-edit.png"
+						techUsed4="react-logo.png"
+						techUsed5="node-js-logo-edited.png"
+						techUsed6="tailwind.png"
+						category="File Converter"
+						code="#"
+						title="FastConversion"
+						desc="This project (that is still in the works) will be able to take any file and convert it to a similar file type. For example .mp4 to .mov"
+					/>
+				</div>
+
 				<div className={style.thirdProjects}>
 					<div className={style.thirdChild1}>
 						<ProjectContainer
